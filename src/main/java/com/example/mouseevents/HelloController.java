@@ -14,4 +14,10 @@ public class HelloController {
         txt1.setVisible(false);
     }
 
+    @FXML
+    void showText(MouseEvent event) {
+        txt1.setVisible(true);
+    }
+
+
 }
