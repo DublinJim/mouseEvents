@@ -1,7 +1,6 @@
 package com.example.mouseevents;
 
 import javafx.fxml.FXML;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
 public class HelloController {
@@ -10,12 +9,14 @@ public class HelloController {
     private Text txt1;
 
     @FXML
-    void hideText(MouseEvent event) {
+    void hideText() {
+        txt1.setText("Hide me");
         txt1.setVisible(false);
     }
 
     @FXML
-    void showText(MouseEvent event) {
+    void showText() {
+        txt1.setText("Returned");
         txt1.setVisible(true);
     }
 
